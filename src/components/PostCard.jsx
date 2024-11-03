@@ -12,8 +12,8 @@ const PostCard = ({$id, title, featuredImage,height=10}) => {
   },[])
   return (
     <Link to={`/post/${$id}`}>
-        <div className='w-full bg-gray-100 rounded-xl p-4'>
-            <div className='w-full justify-center mb-4'>
+        <div className='w-fit bg-gray-100 rounded-xl p-4'>
+            <div className='justify-center mb-4'>
                 <img className='h-40' src={src} alt={title} />
             </div>
             <h2 className='text-xl font-bold'>

@@ -36,10 +36,10 @@ const Home = () => {
                         No Posts yet to display
                     </div>
                 ) : (
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap justify-start">
                         {posts.map((post) => (
                             post.Status=="active"?
-                            <div key={post.$id} className="p-2 w-1/4">
+                            <div key={post.$id} className="p-2">
                                 <PostCard {...post} height={10} />
                             </div>:null
 
