@@ -24,7 +24,7 @@ const AllPost = () => {
         <p>No post yet...</p>
       ) : (
         post.map((pst) => (
-          <div key={pst.$id} className={`p-2 w-1/4 rounded-lg bg-green-500 ${pst.Status === "active" ? "bg-green-500" : "bg-red-500"}`}>
+          <div key={pst.$id} className={`p-2 rounded-lg bg-green-500 ${pst.Status === "active" ? "bg-green-500" : "bg-red-500"}`}>
             <PostCard {...pst}></PostCard>
           </div>
         ))
